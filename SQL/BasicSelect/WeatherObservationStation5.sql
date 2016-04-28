@@ -1,0 +1,13 @@
+(
+    SELECT City, CHAR_LENGTH(City) AS CityLength
+    FROM STATION
+    ORDER BY CHAR_LENGTH(City) ASC, City
+    LIMIT 1
+) 
+UNION 
+(
+    SELECT City, CHAR_LENGTH(City) AS CityLength
+    FROM STATION
+    ORDER BY CHAR_LENGTH(City) DESC, City
+    LIMIT 1
+)
