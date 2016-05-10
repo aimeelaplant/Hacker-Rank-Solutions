@@ -1,3 +1,4 @@
+/* https://www.hackerrank.com/challenges/pairs */
 import java.io.*;
 import java.util.*;
 
