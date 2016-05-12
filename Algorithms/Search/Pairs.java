@@ -37,7 +37,7 @@ public class Solution {
         {
             // get current val
             int currentVal = Integer.parseInt(stringArray[i]);
-            // check if value exists in hashmap and get value of hashmap (difference + currentVal)
+            // check if value exists in hashmap and get value of hashmap (difference + currentVal) (if difference + currentVal exists in the array, then you found the pair)
             if(hashMap.get(currentVal)!=null && hashMap.get(hashMap.get(currentVal))!=null)
             {
                 differenceCount++;
