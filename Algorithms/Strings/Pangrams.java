@@ -16,8 +16,11 @@ public class Solution {
         
         
         for(char character : sentence.toCharArray()) {
-            // add unique character to hashset
-            hashSet.add(character);
+            // check if character is in alphabet
+            if(Character.isLetter(character)) {
+                // add unique character to hashset
+                hashSet.add(character);
+            }
         }
         
         // if hashset size is 26 then it is a pangram!
