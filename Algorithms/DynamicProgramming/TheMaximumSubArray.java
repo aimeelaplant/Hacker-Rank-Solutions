@@ -16,6 +16,7 @@ public class Solution {
         }
         return greatestNegative; 
     }
+
     public static int getContiguousMax(int numIntegers, String[] integers, boolean allNegative) {
 
         int maxInLoop = 0;
@@ -43,7 +44,7 @@ public class Solution {
         
         return contiguousMax;
     }
-    
+
     public static int getNonContiguousMax(int numIntegers, String[] integers, boolean allNegative) {
         
         int maxSoFar = 0;
@@ -61,8 +62,7 @@ public class Solution {
 
         return maxSoFar;
     }
-    
-    
+
     public static void main(String[] args) {
         
         Scanner sc = new Scanner(System.in);
