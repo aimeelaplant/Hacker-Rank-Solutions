@@ -18,7 +18,6 @@ def Insert(head, data):
     if head is None:
         head = node
     else:
-        temp = head
         node.next = head
         head = node
     return head
