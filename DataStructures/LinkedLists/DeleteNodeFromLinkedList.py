@@ -13,15 +13,17 @@
 """
 
 def Delete(head, position):
-    current = head
-    if position == 0:
-        head = current.next
-        return head
     counter = 0
+    current = head
+    prev = None
     while current and counter <= position:
-        if counter == position - 1:
-            temp = current.next
-            current.next = temp.next
-            return head
+        if counter == position:
+            # we're at the head if prev is None
+            if prev is None:
+                head = current.next
+            else:
+                prev.next = current.next
+        prev = current
         current = current.next
         counter += 1
+    return head
