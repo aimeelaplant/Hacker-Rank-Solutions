@@ -11,8 +11,12 @@ A Node is defined as:
 """
 
 def has_cycle(head):
-    current = head
-    while current.next:
-        current = current.next
-        return 1
-    return 0
+    # start them both at the same place
+    slow = head
+    fast = head
+    while fast is not None and fast.next is not None:
+        slow = slow.next
+        fast = fast.next.next
+        if fast == slow:
+            return slow
+    return False
