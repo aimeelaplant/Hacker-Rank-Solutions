@@ -1,6 +1,5 @@
 # https://www.hackerrank.com/challenges/maximum-element
 # Enter your code here. Read input from STDIN. Print output to STDOUT
-from collections import deque
 
 class NodeWithMax:
     
@@ -8,7 +7,7 @@ class NodeWithMax:
         self.value = value
         self.max = max
 
-class StackWithMax(deque):
+class StackWithMax(list):
     
     def push(self, value):
         new_max = max(value, self.max())
