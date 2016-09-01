@@ -2,9 +2,9 @@
 #!/bin/python
 
 import sys
+from collections import deque
 
 def is_balanced(string):
-    from collections import deque
     d = deque()
     for char in string:
         if char == "{" or char == "(" or char == "[":
